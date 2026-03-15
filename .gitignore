@@ -1,0 +1,51 @@
+# Project ignore rules
+# Created: Aug 2024
+# Purpose: Exclude large data, generated outputs, and local environment files.
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Notebook and cache artifacts
+.ipynb_checkpoints/
+
+# Local runtime folders
+input_video/
+docs/
+
+# Model/data artifacts (large or environment-specific)
+data/
+model/*.h5
+weights/*.weights
+
+# Generated results
+*.mp4
+*.avi
+*.mov
+*.png
+result*.mp4
+example.png
+results*.png
